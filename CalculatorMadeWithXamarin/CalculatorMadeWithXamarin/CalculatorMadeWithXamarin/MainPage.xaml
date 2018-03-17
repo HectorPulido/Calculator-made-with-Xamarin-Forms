@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CalculatorMadeWithXamarin"
+             x:Class="CalculatorMadeWithXamarin.MainPage">
+
+    <Grid
+        Padding="10"
+        >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height = "120"/>
+            <RowDefinition Height = "*"/>
+        </Grid.RowDefinitions>
+
+        <Label
+            Grid.Row="0"
+            Grid.ColumnSpan="2"
+            
+            x:Name="OperationResult" 
+            Text="" 
+            FontSize="Large" 
+            FontAttributes="Bold"/>
+
+        <Grid            
+            Grid.Row="1"
+            Grid.Column="0"
+            >
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+
+            <Button 
+                    Text = "7" 
+                    Grid.Row="0" 
+                    Grid.Column="0"
+                    Clicked="AddSymbol"/>
+            <Button 
+                    Text = "8" 
+                    Grid.Row="0" 
+                    Grid.Column="1"
+                    Clicked="AddSymbol"/>
+            <Button 
+                    Text = "9" 
+                    Grid.Row="0" 
+                    Grid.Column="2"
+                    Clicked="AddSymbol"/>
+            <Button 
+                    Text = "4" 
+                    Grid.Row="1" 
+                    Grid.Column="0"
+                    Clicked="AddSymbol"/>
+            <Button 
+                    Text = "5" 
+                    Grid.Row="1" 
+                    Grid.Column="1"
+                    Clicked="AddSymbol"/>
+            <Button 
+                    Text = "6" 
+                    Grid.Row="1" 
+                    Grid.Column="2"
+                    Clicked="AddSymbol"/>
+            <Button 
+                    Text = "1" 
+                    Grid.Row="2" 
+                    Grid.Column="0"
+                    Clicked="AddSymbol"/>
+            <Button 
+                    Text = "2" 
+                    Grid.Row="2" 
+                    Grid.Column="1"
+                    Clicked="AddSymbol"/>
+            <Button 
+                    Text = "3" 
+                    Grid.Row="2" 
+                    Grid.Column="2"
+                    Clicked="AddSymbol"/>
+            <Button 
+                    Text = "." 
+                    Grid.Row="3" 
+                    Grid.Column="0"
+                    Clicked="AddSymbol"/>
+            <Button 
+                    Text = "0" 
+                    Grid.Row="3" 
+                    Grid.Column="1"
+                    Clicked="AddSymbol"/>
+            <Button 
+                    Text = "=" 
+                    Grid.Row="3" 
+                    Grid.Column="2"
+                    Clicked="AddSymbol"/>
+
+
+        </Grid>
+        <Grid
+            Grid.Row="1"
+            Grid.Column="1"
+
+            >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+
+            <Button 
+                Grid.Row="0"
+                Text="DEL" 
+                Clicked="AddSymbol"/>
+            <Button 
+                Grid.Row="1"
+                Text="/" 
+                Clicked="AddSymbol"/>
+            <Button
+                Grid.Row="2"
+                Text="*" 
+                Clicked="AddSymbol"/>
+            <Button
+                Grid.Row="3"
+                Text="-" 
+                Clicked="AddSymbol"/>
+            <Button
+                Grid.Row="4"
+                Text="+" 
+                Clicked="AddSymbol"/>
+            <Button
+                Grid.Row="5"
+                Text="(" 
+                Clicked="AddSymbol"/>
+            <Button
+                Grid.Row="6"
+                Text=")" 
+                Clicked="AddSymbol"/>
+
+        </Grid>
+        
+    </Grid>
+
+</ContentPage>
